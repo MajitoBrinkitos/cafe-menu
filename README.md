@@ -3,7 +3,8 @@ HTML and CSS codes to display a Cafe Menu
 
 <!DOCTYPE html>
 <html lang="en">
-    <!--CSS code-->
+    <head>
+        <!--CSS code-->
     <style>
         /*CSS code for the Project "Cafe Menu" */
 /*h1, h2, p: Coffee*/
@@ -112,6 +113,8 @@ a{
     margin-bottom: 5px;
 }
     </style>
+    </head>
+    
     <body>
             <!--Div: For design layout purposes-->
             <!--Main Section-->
