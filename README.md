@@ -3,14 +3,6 @@ HTML and CSS codes to display a Cafe Menu
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Cafe Menu</title>
-        <link rel="stylesheet" type="text/css" href="./cafemenu.css">
-        <!--For mobile versions-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
-
     <body>
             <!--Div: For design layout purposes-->
             <!--Main Section-->
