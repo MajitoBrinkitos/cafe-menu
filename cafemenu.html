@@ -4,69 +4,152 @@
         <meta charset="utf-8">
         <title>Cafe Menu</title>
         <link rel="stylesheet" type="text/css" href="./cafemenu.css">
+
         <!--For mobile versions-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+        <!--Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
     </head>
 
     <body>
-            <!--Div: For design layout purposes-->
-            <!--Main Section-->
-            <div class="menu">
-            <main>
-                <h1>CAMPER CAFE</h1>
-                <p class="established">Est. 2020</p>
-                <hr>
-                <!--First Section-->
-                <section>
-                    <h2>Coffee</h2>
-                    <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon">
-                    <!--Article: contains multiple elements that have related information-->
-                      <article class="item">
-                        <p class="flavor">French Vanilla</p><p class="price">$3.00</p>
-                      </article>
-                      <article class="item">
-                        <p class="flavor">Caramel Macchiato</p><p class="price">$3.75</p>
-                      </article>
-                      <article class="item">
-                        <p class="flavor">Pumpkin Spice</p><p class="price">$3.50</p>
-                      </article>
-                      <article class="item">
-                        <p class="flavor">Hazelnut</p><p class="price">$4.00</p>
-                      </article>
-                      <article class="item">
-                        <p class="flavor">Mocha</p><p class="price">$4.50</p>
-                      </article>
-                </section>
-                <!--Second Section-->
-                <section>
-                    <h2>Desserts</h2>
-                    <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon">
-                    <!--Article Section-->
-                    <article class="item">
-                        <p class="dessert">Donuts</p><p class="price">$1.50</p>
-                    </article>
-                    <article class="item">
-                        <p class="dessert">Cherry Pie</p><p class="price">$2.75</p>
-                    </article>
-                    <article class="item">
-                        <p class="dessert">Cheesecake</p><p class="price">$3.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="dessert">Cinnamon Roll</p><p class="price">$2.50</p>
-                    </article>
-                </section>
-            </main>
-            <hr class="bottom-line">
-            <!--Footer-->
-            <footer>
-                <p>
-                    <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
-                </p>
-                <p class="address">
-                    123 Free Code Camp Drive
-                    BC, Canada
-                </p>
-            </footer>
+        <div class="row justify-content-around">
+            <div id="menu" class="col-4">
+                <h1>CAFÉ CIELITO LINDO</h1>
+                            <p class="established">Est. 2020</p>
+                            <hr>
+                            <!--First Section-->
+                            <section>
+                                <h2>Tómalo Calientito</h2>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-cup-hot-fill" style="font-size: 2rem; color: #791815;"></i>
+                                </div>
+                                
+                                <!--Article: contains multiple elements that have related information-->
+                                  <article class="item">
+                                    <p class="flavor">Cacao Puro</p><p class="price">$3.00</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Café con Leche</p><p class="price">$3.75</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Té chai</p><p class="price">$3.50</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Mocha</p><p class="price">$4.00</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Espresso</p><p class="price">$4.50</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Cappuccino</p><p class="price">$4.50</p>
+                                  </article>
+                            </section>
+                            <!--Second Section-->
+                            <section>
+                                <h2>Para refrescarte</h2>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-cup-straw" style="font-size: 2rem; color: #791815;"></i>
+                                </div>
+                                <!--Article Section-->
+                                <article class="item">
+                                    <p class="flavor">Tés Herbales</p><p class="price">$3.00</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Tés Frutales</p><p class="price">$3.75</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Cold Brew</p><p class="price">$3.50</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Horchata</p><p class="price">$4.00</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Limonada</p><p class="price">$4.50</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Café con Leche</p><p class="price">$4.50</p>
+                                  </article>
+                            </section>
             </div>
+
+            <div id="menu" class="col-4">
+                <h1>CAFÉ CIELITO LINDO</h1>
+                            <p class="established">Est. 2020</p>
+                            <hr>
+                            <!--First Section-->
+                            <section>
+                                <h2>Las penas con pan son buenas</h2>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-cookie" style="font-size: 2rem; color: #791815;"></i>
+                                </div>
+                                
+                                <!--Article: contains multiple elements that have related information-->
+                                  <article class="item">
+                                    <p class="flavor">Conchas</p><p class="price">$3.00</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Croissants</p><p class="price">$3.75</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Orejas</p><p class="price">$3.50</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Con frutas</p><p class="price">$4.00</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Extra mantequilla</p><p class="price">$4.50</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Sin azúcar</p><p class="price">$4.50</p>
+                                  </article>
+                            </section>
+                            <!--Second Section-->
+                            <section>
+                                <h2>Algo dulce</h2>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-cake-fill" style="font-size: 2rem; color: #791815;"></i>
+                                </div>
+                                <!--Article Section-->
+                                <article class="item">
+                                    <p class="flavor">Pasteles</p><p class="price">$3.00</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Mousses</p><p class="price">$3.75</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Puro chocolate</p><p class="price">$3.50</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Con café</p><p class="price">$4.00</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Sin azúcar</p><p class="price">$4.50</p>
+                                  </article>
+                                  <article class="item">
+                                    <p class="flavor">Con un toque frutal</p><p class="price">$4.50</p>
+                                  </article>
+                            </section>
+            </div>
+        </div>
+        
+        <!--Footer-->
+        <footer>
+            <p>
+                <a href="https://www.example.com" target="_blank">Nuestro Portal</a>
+            </p>
+            <p class="address">
+                123 Av. México, Ciudad de México
+            </p>
+        </footer>
+
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
