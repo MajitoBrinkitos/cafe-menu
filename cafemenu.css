@@ -1,4 +1,3 @@
-/*CSS code for the Project "Cafe Menu" */
 /*h1, h2, p: Coffee*/
 h1, h2, p{
     text-align: center;
@@ -11,6 +10,7 @@ h1, h2{
 
 /*h1, h2 font-size*/
 h1{
+    font-family: "Ultra", serif;
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
@@ -34,9 +34,9 @@ img{
 }
 
 hr{
-    height: 2px; /*border-width default value is 1px for all edges*/
-    background-color: brown;
-    border-color: brown; /*Edges, borders of the hr*/
+    height: 4px; /*border-width default value is 1px for all edges*/
+    background-color: #650304;
+    border-color: #650304; /*Edges, borders of the hr*/
 }
 
 /*For second hr*/
@@ -46,19 +46,21 @@ hr{
 
 /*Body*/
 body{
-    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    background-image: url(./coffee-bkgr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: sans-serif;
     padding: 20px;
+    padding-bottom: 0;
 }
 
-/*Id=Menu*/
-.menu{
-    max-width: 500px; /*sets this div to make it 80% the width of body, not the div*/
-    background-color: burlywood;
-    /*To center horizontally within the body element*/
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
+/*Menu*/
+#menu {
+    margin-top: 15px;
+    background-color: #EFE3CC;
+    color: #d71515;
+    padding: 10px;
+    margin-bottom: 15px;
 }
 
 .dessert, .flavor{
@@ -81,23 +83,33 @@ body{
 
 /*Footer*/
 footer{
-    font-size: 14px;
+    font-size: 24px;
+    text-decoration:none;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    background-color: #d71515;
+    color: #EFE3CC;
+    margin-bottom: 0;
 }
 
 footer a:visited{ /*when a webpage has being visited*/
-    color: black;
+    color: #EFE3CC;
+    text-decoration: none;
 }
 
 footer a:hover{
-    color: brown;
+    color: black;
+    font-family: "Ultra", serif;
 }
 
 footer a:active{ /*when a link has being clicked*/
-    color: brown;
+    color: #EFE3CC;
+    text-decoration: none;
 }
 
 a{
-    color: black;
+    color: #EFE3CC;
+    text-decoration: none;
 }
 
 /*Address*/
